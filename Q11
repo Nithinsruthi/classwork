@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, *ptr1, *ptr2, sum;
+
+    printf("Input first number: ");
+    scanf("%d", &num1);
+
+    printf("Input second number: ");
+    scanf("%d", &num2);
+
+    ptr1 = &num1;  // pointer to num1
+    ptr2 = &num2;  // pointer to num2
+
+    sum = *ptr1 + *ptr2;  // adding the values pointed to by the pointers
+
+    printf("Sum of %d and %d is %d\n", *ptr1, *ptr2, sum);
+
+    return 0;
+}
+output: 
+Input first number: 19
+Input second number: 9
+Sum of 19 and 9 is 28
